@@ -1,5 +1,7 @@
 <?php 
-   
+
+namespace Core\DB;
+
  class Dbconnect 
  { 
         private $_localhost = 'localhost'; 
@@ -16,12 +18,13 @@
             { 
                         
                 //echo "DB Connect";
-                $this->connection = new mysqli($this->_localhost , $this->_user , $this->_password , $this->_dbname); 
+                $this->connection = new \mysqli($this->_localhost , $this->_user , $this->_password , $this->_dbname); 
                 if(!isset($this-> connection))  {
                     echo "Connection error";
                 }
             
             } 
+
             return $this->connection; 
         
         } 

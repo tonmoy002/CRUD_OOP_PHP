@@ -1,5 +1,5 @@
 <?php 
-    define("BASE_URL" , "http://localhost:8888/CRUD-OOP/");
+    define("BASE_URL" , "http://localhost:8888/CRUD_OOP_PHP/");
 ?>
 
 

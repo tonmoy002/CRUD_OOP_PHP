@@ -1,8 +1,9 @@
 <?php 
    
- include_once('core/DB/Dbconnect.php'); 
-   
- class Crud extends Dbconnect 
+require_once('core/DB/Dbconnect.php'); 
+use Core\DB\Dbconnect as Connect; 
+
+ class Crud extends Connect
  { 
              
     public $columns = ""; 
